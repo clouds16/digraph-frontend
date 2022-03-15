@@ -8,7 +8,7 @@ function UpdateButton( { data} ){
     function onButtonPress(){
         try {
             alert("About to update existing data")
-            Axios.put(baseURL+ '/update' || process.env.LOCAL , {data})
+            Axios.put(baseURL+ '/update', {data})
             console.log("data updated")
         }
         catch {

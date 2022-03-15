@@ -16,7 +16,7 @@ function SaveWorkflow({data} ){
     function createNew(){
         saveState()
         try{
-            Axios.post( baseURL + '/create' || process.env.LOCAL + '/create', data)
+            Axios.post( baseURL + '/create', data)
         } catch (e){
             alert("Could not save data")
         }
